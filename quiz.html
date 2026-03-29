@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function checkAnswer(){
+var userAnswer=document.getElementById("ans").value;
+var correctAnswer="new delhi";
+if(userAnswer.toLowerCase()===correctAnswer){
+document.getElementById("result").innerHTML="Correct!";
+}else{
+document.getElementById("result").innerHTML="Incorrect. The correct answer is New Delhi.";
+}
+}
+</script>
+</head>
+<body>
+<h1>Interactive quiz</h1>
+<p>What is the capital of India?</p>
+<input type="text" id="ans" placeholder="Enter your answer here">
+<button onclick="checkAnswer()">Submit</button>
+<p id="result"></p>
+</body>
+</html>
